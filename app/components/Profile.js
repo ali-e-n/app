@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { FaLinkedin, FaTwitter, FaGithub, FaMobile } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaGithub,
+  FaMobile,
+  FaBuilding,
+} from "react-icons/fa";
 
 import { FiMail, FiMapPin, FiGlobe, FiDownload } from "react-icons/fi";
 
@@ -41,7 +47,7 @@ const Profile = () => {
 
       <div className="flex flex-col items-start justify-center mt-5 pt-5 pb-5 pl-6  text-lg  pr-6 space-y-4 bg-[#f3f6f6] dark:bg-gray-900 rounded-lg text-gray-700 dark:text-gray-300 shadow-lg ">
         {/* Phone */}
-        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300">
+        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300 w-full">
           <FaMobile className="text-xl text-[#E93B81]" />
           <div>
             <p className="text-xs text-gray-500">Phone</p>
@@ -50,7 +56,7 @@ const Profile = () => {
         </div>
 
         {/* Email */}
-        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300">
+        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300 w-full">
           <FiMail className="text-xl text-[#6AB5B9]" />
           <div>
             <p className="text-xs text-gray-500">Email</p>
@@ -59,7 +65,7 @@ const Profile = () => {
         </div>
 
         {/* Location */}
-        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300">
+        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300 w-full">
           <FiMapPin className="text-xl text-[#FD7590]" />
           <div>
             <p className="text-xs text-gray-500">Location</p>
@@ -68,12 +74,12 @@ const Profile = () => {
         </div>
 
         {/* Website */}
-        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300">
-          <FiGlobe className="text-xl text-[#C17CEB]" />
+        <div className="flex items-center space-x-3 border-b dark:border-gray-600 border-gray-300 w-full">
+          <FaBuilding className="text-xl text-[#C17CEB]" />
           <div>
-            <p className="text-xs text-gray-500">Website</p>
-            <a className="text-lg pb-2" href="https://www.weandweb.com">
-              https://www.weandweb.com
+            <p className="text-xs text-gray-500">Company</p>
+            <a className="text-lg pb-3" href="https://www.supperclubme.com">
+              SupperClub Middle East
             </a>
           </div>
         </div>

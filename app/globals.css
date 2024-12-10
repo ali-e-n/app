@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -13,9 +13,22 @@
     --foreground: #ededed;
   }
 }
+*/
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.light body {
+  background-image: url("/light.jpg");
+  repeat: no-repeat;
+}
+
+/* Dark mode */
+.dark body {
+  background-image: url("/dark.jpg");
 }

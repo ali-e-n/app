@@ -8,7 +8,7 @@ export const Navbar = () => {
   const { theme } = useTheme(); // Get current theme (light or dark)
 
   // Set logo path based on theme
-  const logoSrc = theme === "dark" ? "/light.png" : "/dark.png";
+  const logoSrc = theme === "light" ? "/dark.png" : "/light.png";
 
   return (
     <div className="flex w-full p-2 items-stretch justify-between md:pl-44 md:pr-64">

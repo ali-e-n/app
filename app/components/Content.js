@@ -10,7 +10,7 @@ export const Content = () => {
         hii
       </div>
 
-      <div className=" dark:bg-gray-800 w-[5%] bg-white dark:text-white text-gray-700 space-y-4 rounded-2xl  flex flex-col items-center justify-between pb-3 pt-3">
+      <div className=" dark:bg-gray-800 w-[5%] bg-white dark:text-white text-gray-700 space-y-4 rounded-2xl  flex flex-col items-center justify-between pb-8 pt-8">
         <TimelineIcons />
       </div>
     </div>

@@ -11,7 +11,7 @@ import { FiMail, FiMapPin, FiDownload } from "react-icons/fi";
 
 const Profile = () => {
   return (
-    <div className="profile dark:bg-gray-800 bg-white dark:text-white text-gray-700 space-y-6 rounded-2xl flex flex-col items-center justify-between p-5 md:p-8 lg:p-12 xl:p-16">
+    <div className="profile dark:bg-gray-800 bg-white dark:text-white text-gray-700 space-y-6 rounded-2xl flex flex-col items-center justify-between max-w-md mx-auto">
       {/* Profile Image */}
       <Image
         src={"/dp.jpeg"}

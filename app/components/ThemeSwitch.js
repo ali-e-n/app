@@ -26,20 +26,10 @@ export default function ThemeSwitch() {
     );
 
   if (resolvedTheme === "dark") {
-    return (
-      <FiSun
-        onClick={() => setTheme("light")}
-        className="text-2xl hover:text-blue-600"
-      />
-    );
+    return <FiSun onClick={() => setTheme("light")} className="text-2xl" />;
   }
 
   if (resolvedTheme === "light") {
-    return (
-      <FiMoon
-        onClick={() => setTheme("dark")}
-        className="text-2xl hover:text-blue-600"
-      />
-    );
+    return <FiMoon onClick={() => setTheme("dark")} className="text-2xl " />;
   }
 }

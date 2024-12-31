@@ -25,7 +25,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full mt-20 sm:mt-15 items-center justify-between px-4 sm:px-16 md:px-20 lg:px-24 xl:px-32 2xl:px-40">
+    <div className="flex w-full mt-20 sm:mt-15 items-center justify-between px-4 sm:px-16 md:px-20 lg:px-24 xl:px-32 2xl:px-16">
       {/* Logo */}
       <Image
         src={logoSrc}
@@ -101,7 +101,7 @@ export const Navbar = () => {
               className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-600 px-5 py-2 rounded-xl transition-transform duration-300 hover:scale-105 "
             >
               <Icon className="text-xl text-gray-500 dark:text-white" />
-              <p>{label}</p>
+              <button>{label}</button>
             </li>
           ))}
         </ul>

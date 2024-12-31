@@ -14,8 +14,8 @@ import { FiMail, FiMapPin, FiDownload } from "react-icons/fi";
 
 const Profile = () => {
   return (
-    <div className="w-full xl:w-[22%] 2xl:w-[20%] sm:px-10 xl:px-0">
-      <div className="flex flex-col items-center justify-center space-y-4 rounded-2xl bg-white dark:bg-black dark:text-white text-gray-700 p-4 xl:relative">
+    <div className="w-full xl:w-[22%] 2xl:w-[25%] sm:px-10 xl:px-0 pt-0 ">
+      <div className="flex flex-col items-center justify-center space-y-4 rounded-2xl bg-white dark:bg-black dark:text-white text-gray-700 p-4 xl:relative pb-7 pt-7">
         {/* Image */}
         <div className="xl:absolute xl:-top-32 z-0 relative xl:bottom-32 w-[210px] h-[210px]  rounded-2xl overflow-hidden shadow-lg">
           <Image
@@ -38,7 +38,7 @@ const Profile = () => {
         {/* Social */}
         <div className="w-full xl:w-auto flex justify-center">
           <ul className="social flex justify-center items-center space-x-2">
-            <li className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-3 rounded-xl">
+            <li className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-3 rounded-xl sticky top-0">
               <FaTwitter className="text-base text-[#E93B81]" />
             </li>
             <li className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-3 rounded-xl">
@@ -93,6 +93,14 @@ const Profile = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Download Button */}
+        <div className="bg-blue-600 rounded-xl px-4 py-3 flex items-center justify-center space-x-3 text-white text-md">
+          <FiDownload />
+          <button>
+            <a href="#">Download Resume</a>
+          </button>
         </div>
       </div>
     </div>

@@ -4,9 +4,8 @@ import Navigation from "./components/Navigation";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen  font-[family-name:var(--font-geist-sans)]">
+    <div className=" min-h-screen  font-[family-name:var(--font-geist-sans)] 2xl:px-52">
       <Navbar />
-      <Navigation />
       <Content />
 
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

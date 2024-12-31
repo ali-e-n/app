@@ -23,6 +23,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .light body {
   background-image: url("/light.jpg");
   repeat: no-repeat;

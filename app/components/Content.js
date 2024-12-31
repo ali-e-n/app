@@ -4,12 +4,12 @@ import TimelineIcons from "./TimelineIcons";
 
 export const Content = () => {
   return (
-    <div className="content w-full min-h-screen flex flex-col lg:flex-row justify-center items-start mt-52">
+    <div className="content min-h-screen flex flex-col xl:flex-row space-x-4 space-y-4 justify-center items-start mt-52 px-4 sm:px-8 md:px-12">
       {/* Profile Section */}
-      {/* <Profile /> */}
+      <Profile />
 
       {/* Main Content Section */}
-      <div className="dark:bg-gray-800 w-full lg:w-[70%] bg-white dark:text-white text-gray-700 space-y-4 rounded-2xl flex flex-col items-center justify-between pb-3 pt-3 flex-1">
+      <div className="dark:bg-gray-800 w-full lg:w-[70%] bg-white dark:text-white text-gray-700 space-y-4 rounded-2xl flex flex-col items-center justify-between flex-1">
         hii
       </div>
 

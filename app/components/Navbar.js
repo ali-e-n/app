@@ -84,11 +84,11 @@ export const Navbar = () => {
 
       {/* Dropdown Menu */}
       <div
-        className={`xl:hidden absolute top-36 left-1/2 transform -translate-x-1/2 rounded-xl w-[calc(100%-2.5rem)] mt-12 max-w-sm sm:max-w-xl md:max-w-2xl px-2 py-5 bg-white dark:bg-gray-900 shadow-lg transition-opacity duration-500 ${
+        className={`xl:hidden absolute top-36 left-1/2 transform -translate-x-1/2 rounded-xl w-[calc(100%-2.5rem)] mt-12 max-w-sm sm:max-w-xl md:max-w-2xl px-2 py-5 bg-white dark:bg-gray-900 shadow-lg transition-opacity duration-500 z-50 ${
           openNav ? "opacity-100 block" : "opacity-0 hidden"
         }`}
       >
-        <ul className="flex flex-col items-start justify-center space-y-4">
+        <ul className="flex flex-col items-start justify-center space-y-4 ">
           {[
             { icon: FaUserAlt, label: "About" },
             { icon: FaFileAlt, label: "Resume" },
@@ -98,7 +98,7 @@ export const Navbar = () => {
           ].map(({ icon: Icon, label }) => (
             <li
               key={label}
-              className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-600 px-5 py-2 rounded-xl transition-transform duration-300 hover:scale-105"
+              className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-blue-600 px-5 py-2 rounded-xl transition-transform duration-300 hover:scale-105 "
             >
               <Icon className="text-xl text-gray-500 dark:text-white" />
               <p>{label}</p>
@@ -106,6 +106,7 @@ export const Navbar = () => {
           ))}
         </ul>
       </div>
+      {}
     </div>
   );
 };

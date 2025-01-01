@@ -38,3 +38,18 @@ body {
 .dark body {
   background-image: url("/dark.jpg");
 }
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  display: flex;
+  gap: 1rem; /* Adjust spacing between images */
+  animation: slide 20s linear infinite;
+  width: calc(200%); /* Double the width for seamless looping */
+}

@@ -38,7 +38,7 @@ export const Navbar = () => {
       {/* Right Section */}
       <div className="flex items-center space-x-4">
         {/* Theme Switch */}
-        <div className="dark:bg-black dark:text-white p-3 rounded-full bg-white text-black xl:flex hover:bg-blue-700 hover:text-white dark:hover:bg-blue-700 dark:hover:text-white cursor-pointer transition ease-in-out duration-300">
+        <div className="dark:bg-[#1d1d1d] dark:text-white p-3 rounded-full bg-white text-black xl:flex hover:bg-blue-700 hover:text-white dark:hover:bg-blue-700 dark:hover:text-white cursor-pointer transition ease-in-out duration-300">
           <ThemeSwitch />
         </div>
 

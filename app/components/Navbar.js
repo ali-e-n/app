@@ -25,7 +25,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full mt-20 sm:mt-15 items-center justify-between px-4 sm:px-16 md:px-20 lg:px-24 xl:px-32 2xl:px-16">
+    <div className="flex w-full mt-20 sm:mt-15 items-center justify-between px-4 sm:px-16 md:px-20 lg:px-24 xl:px-32 2xl:px-36">
       {/* Logo */}
       <Image
         src={logoSrc}

@@ -14,8 +14,8 @@ import { FiMail, FiMapPin, FiDownload } from "react-icons/fi";
 
 const Profile = () => {
   return (
-    <div className="w-full xl:w-[22%] 2xl:w-[25%] sm:px-10 xl:px-0 pt-0 ">
-      <div className="flex flex-col items-center justify-center space-y-4 rounded-2xl bg-white dark:bg-black dark:text-white text-gray-700 p-4 xl:relative pb-7 pt-7">
+    <div className="w-full xl:w-[22%] sm:px-10 xl:px-0 pt-0 xl:sticky top-1 ">
+      <div className="flex flex-col items-center justify-center space-y-4 rounded-3xl bg-white dark:bg-black dark:text-white  text-gray-700 p-7 xl:relative pb-7 pt-7">
         {/* Image */}
         <div className="xl:absolute xl:-top-32 z-0 relative xl:bottom-32 w-[210px] h-[210px]  rounded-2xl overflow-hidden shadow-lg">
           <Image
@@ -57,7 +57,7 @@ const Profile = () => {
         </div>
         {/* Address */}
         <div className="w-full">
-          <div className="flex flex-col items-start justify-center px-4 py-4 space-y-5 bg-[#f3f6f6] dark:bg-gray-900 rounded-lg text-base  text-gray-700 dark:text-gray-300 mb-3 xl:w-auto w-full">
+          <div className="flex flex-col items-start justify-center px-9 py-7 space-y-5 bg-[#f3f6f6] dark:bg-gray-900 rounded-lg text-base  text-gray-700 dark:text-gray-300 mb-3 xl:w-auto w-full">
             <div className="flex items-center space-x-4 border-b dark:border-gray-600 border-gray-300 w-full pb-2">
               <FaMobile className="text-2xl text-[#E93B81]" />
               <div>

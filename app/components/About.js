@@ -6,16 +6,16 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center bg-white dark:bg-black xl:flex-1 max-w-[850px] text-gray-700 dark:text-white rounded-3xl w-full mx-auto pt-14 p-4 xl:mt-0 "
+      className="flex flex-col items-center justify-center bg-white dark:bg-black xl:flex-1 max-w-[850px] text-gray-700 dark:text-white rounded-3xl w-full mx-auto xl:mt-0 "
     >
-      <div className="w-full px-5">
+      <div className="w-full px-8 py-10">
         {/* main content */}
         <div className="flex items-center space-x-4">
           <h1 className="text-3xl font-bold p-2 sm:p-4">About Me</h1>
-          <div className="h-1 w-24   bg-blue-600"></div>
+          <div className="h-1 w-24   bg-blue-600 mb-2"></div>
         </div>
 
-        <p className="text-md  text-gray-700 dark:text-[#a6a6a6] mt-2 p-4 max-w-2xl">
+        <p className="text-md  text-gray-700 dark:text-[#a6a6a6] p-4 max-w-2xl">
           I am a Frontend Developer with a passion for creating responsive,
           user-friendly interfaces using modern technologies like React and
           Next.js. I focus on delivering clean, efficient, and scalable code to
@@ -78,7 +78,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="dark:bg-[#1d1d1d] bg-[#f3f6f6] h-[30vh] mt-8 flex flex-col justify-center items-center w-full  p-6 rounded-2xl">
+      <div className="text-gray-700 dark:text-gray-300   dark:bg-gray-900 bg-[#f3f6f6]  mt-8 flex flex-col justify-center items-center w-full  p-6 ">
         <h1 className="text-3xl font-semibold ">Clinet</h1>
         <Slides />
       </div>

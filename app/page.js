@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)] 2xl:px-24">
       <Navbar />
-      <div className="content min-h-screen flex flex-col xl:flex-row justify-center items-start mt-52 px-4 sm:px-8 md:px-12 xl:space-x-6 space-y-4  mb-16">
+      <div className="content min-h-screen flex flex-col xl:flex-row justify-center items-start mt-52 px-4 sm:px-8 md:px-12 xl:space-x-6 space-y-4 xl:space-y-0 mb-16">
         {/* Profile Section */}
         <Profile />
 

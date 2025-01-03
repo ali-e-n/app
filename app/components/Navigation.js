@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   FaUserAlt,
@@ -7,32 +8,68 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-const Navigation = () => {
+const Navigation = ({ setShowAbout, setShowResume }) => {
   return (
-    <nav className="p-4 bg-white dark:bg-gray-800 rounded-full w-[40%] ">
-      <ul className="sm:flex space-x-3 justify-center items-center sm:pl-4 sm:pr-4 ">
-        <li className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-4  rounded-xl dark:hover:text-blue-600 ">
-          <FaUserAlt className="text-xl text-[#E93B81]" />
-          <p>About</p>
+    <div className=" xl:w-[12%] xl:min-w-[11%] xl:max-w-[11%]  hidden xl:flex flex-col items-center justify-between pb-8 pt-8 bg-white dark:bg-black text-gray-700 dark:text-white rounded-3xl sticky top-1">
+      <ul className="space-y-4">
+        {/* About */}
+        <li
+          className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
+          onClick={() => {
+            setShowAbout(true);
+            setShowResume(false);
+          }}
+        >
+          <FaUserAlt className="text-xl group-hover:text-white" />
+          <span className="group-hover:text-white">About</span>
         </li>
-        <li className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-4 rounded-xl dark:hover:text-blue-600 ">
-          <FaFileAlt className="text-xl text-[#6AB5B9]" />
-          <p>Resume</p>
+
+        {/* Resume */}
+        <li
+          className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
+          onClick={() => {
+            setShowResume(true);
+            setShowAbout(false);
+          }}
+        >
+          <FaFileAlt className="text-xl group-hover:text-white" />
+          <span className="group-hover:text-white">Resume</span>
         </li>
-        <li className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-4 rounded-xl dark:hover:text-blue-600 ">
-          <FaBriefcase className="text-xl text-[#FD7590]" />
-          <p>Works</p>
+
+        {/* Works */}
+        <li
+          className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
+          onClick={() => {
+            console.log("Works clicked");
+          }}
+        >
+          <FaBriefcase className="text-xl group-hover:text-white" />
+          <span className="group-hover:text-white">Works</span>
         </li>
-        <li className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-4 rounded-xl dark:hover:text-blue-600 ">
-          <FaBlog className="text-xl text-[#C17CEB]" />
-          <p>Blogs</p>
+
+        {/* Blogs */}
+        <li
+          className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
+          onClick={() => {
+            console.log("Blogs clicked");
+          }}
+        >
+          <FaBlog className="text-xl group-hover:text-white" />
+          <span className="group-hover:text-white">Blogs</span>
         </li>
-        <li className="flex items-center space-x-2 cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-4 rounded-xl dark:hover:text-blue-600 ">
-          <FaEnvelope className="text-xl text-[#26ebe1]" />
-          <p>Contact</p>
+
+        {/* Contacts */}
+        <li
+          className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
+          onClick={() => {
+            console.log("Contacts clicked");
+          }}
+        >
+          <FaEnvelope className="text-xl group-hover:text-white" />
+          <span className="group-hover:text-white">Contacts</span>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ import {
 
 const Navigation = ({ setShowAbout, setShowResume }) => {
   return (
-    <div className=" xl:w-[12%] xl:min-w-[11%] xl:max-w-[11%]  hidden xl:flex flex-col items-center justify-between pb-8 pt-8 bg-white dark:bg-black text-gray-700 dark:text-white rounded-3xl sticky top-1">
+    <div className=" xl:w-[12%] xl:min-w-[11%] xl:max-w-[11%]  hidden xl:flex flex-col items-center justify-between pb-8 pt-8  bg-white dark:bg-black text-gray-700 dark:text-white rounded-3xl sticky top-1">
       <ul className="space-y-4">
         {/* About */}
         <li

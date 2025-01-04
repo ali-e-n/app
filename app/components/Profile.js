@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import {
   FaLinkedin,
@@ -10,33 +9,37 @@ import {
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
-import { FiMail, FiMapPin, FiDownload } from "react-icons/fi";
-
+import { FiMapPin, FiDownload } from "react-icons/fi";
 const Profile = () => {
   return (
-    <div className="w-full xl:w-[22%] 2xl:w-[23%]  xl:sticky top-1 max-w-[850px] md:mx-auto xl:mx-0 ">
-      <div className="flex flex-col items-center justify-center space-y-4 rounded-3xl bg-white dark:bg-black dark:text-white text-gray-700 p-4 xl:relative pb-7 pt-7">
+    <div className=" mx-auto  xl:sticky top-32 w-full xl:w-auto xl:mx-0  ">
+      <div className="flex flex-col items-center justify-center space-y-4 rounded-3xl bg-white dark:bg-black dark:text-white text-gray-700 px-4 py-4 xl:px-8 xl:py-6 xl:relative pb-7 pt-7">
         {/* Image */}
-        <div className="xl:absolute xl:-top-32 z-0 relative xl:bottom-32 w-[210px] h-[210px]  rounded-2xl overflow-hidden shadow-lg">
+        <div
+          id="dp"
+          className="xl:absolute xl:-top-32 z-0 relative xl:bottom-32  w-[240px] h-[240px] rounded-3xl xl:px-4 overflow-hidden shadow-lg"
+        >
           <Image
-            src="/dp.jpeg"
+            src="/Ali.png"
             alt="Profile"
             layout="fill"
             objectFit="cover"
+            style={{ objectPosition: "center" }}
             className=""
+            id="dp1"
           />
         </div>
 
         {/* Intro */}
         <div className="xl:pt-20  flex flex-col items-center space-y-2 justify-center ">
-          <h1 className="text-2xl font-bold">Ali Akbar Khan</h1>
-          <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-900 bg-[#f3f6f6]  rounded-3xl  px-3 py-2 ">
+          <h1 className="text-3xl font-bold xl:mt-5">Ali Akbar Khan</h1>
+          <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-900 bg-[#f3f6f6]  rounded-md  px-4 py-2 ">
             Frontend Developer
           </p>
         </div>
 
         {/* Social */}
-        <div className="w-full xl:w-auto flex justify-center mb-3">
+        <div className="w-full xl:w-auto flex justify-center mb-3 ">
           <ul className="social flex justify-center items-center space-x-2">
             <li className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:bg-gray-900 bg-[#f3f6f6] p-3 rounded-xl sticky top-0">
               <FaTwitter className="text-base text-[#E93B81]" />
@@ -57,7 +60,7 @@ const Profile = () => {
         </div>
         {/* Address */}
         <div className="w-full">
-          <div className="flex flex-col items-start justify-center px-9 py-7 gap-5 xl:px-4 xl:py-3 bg-[#f3f6f6] dark:bg-gray-900 rounded-3xl text-base  text-gray-700 dark:text-gray-300 mb-3">
+          <div className="flex flex-col items-start justify-center px-9 py-7 gap-5 xl:px-10  xl:py-10 bg-[#f3f6f6] dark:bg-gray-900 rounded-3xl text-base  text-gray-700 dark:text-gray-300 mb-3">
             <div className="flex items-center gap-4 border-b dark:border-gray-600 border-gray-300 w-full pb-2">
               <FaMobile className="text-2xl text-[#E93B81]" />
               <div>

@@ -5,19 +5,19 @@ export const Resume = () => {
   return (
     <div
       id="Resume"
-      className="flex flex-col items-center justify-center bg-white dark:bg-black max-w-[850px] text-gray-700 dark:text-white rounded-3xl w-full mx-auto py-6 px-0"
+      className="flex flex-col items-center flex-1 flex-grow-3 w-full xl:min-w-[774px] justify-center bg-white dark:bg-black  text-gray-700 dark:text-white rounded-3xl xl:mt-0 py-6   "
     >
       <div className="w-full px-8 py-10">
         {/* Header */}
-        <div className="flex items-center space-x-4 mb-6 xl:px-4">
-          <h1 className="text-3xl font-bold">Resume</h1>
-          <div className="h-1 w-24 bg-blue-600 mb-2"></div>
+        <div className="flex items-center space-x-2 xl:space-x-4 mb-6 px-4">
+          <h1 className="text-3xl font-bold mb-3">Resume</h1>
+          <div className="h-[3px] w-[200px] bg-blue-600 "></div>
         </div>
 
         {/* Content */}
-        <div className="flex flex-col md:flex-row gap-8 xl:px-4">
+        <div className="flex flex-col md:flex-row gap-8 xl:px-4 w-full">
           {/* Education Section */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 w-full">
             <div className="flex items-center gap-2 text-blue-700">
               <FaGraduationCap className="text-4xl" />
               <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300">
@@ -58,8 +58,8 @@ export const Resume = () => {
           </div>
 
           {/* Experience Section */}
-          <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-2 text-blue-700">
+          <div className="flex flex-col gap-6 w-full">
+            <div className="flex items-center gap-2 w-full text-blue-700">
               <FaBriefcase className="text-4xl" />
               <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300">
                 Experience
@@ -105,7 +105,7 @@ export const Resume = () => {
       {/* Skills */}
 
       <div className=" flex flex-col justify-start items-start gap-8  md:flex-row dark:text-gray-300 mx-auto px-8 xl:px-14 py-10  dark:bg-gray-900 bg-[#f3f6f6] w-full ">
-        <div className="flex flex-col gap-8 w-full">
+        <div className="flex flex-col gap-8 w-full ">
           <div className="flex items-center gap-2 text-blue-700">
             <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300">
               Working Skills
@@ -168,38 +168,46 @@ export const Resume = () => {
         </div>
 
         {/* 2nd Section */}
-        <div className="flex flex-col gap-6 w-full">
+
+        <div className="flex flex-col justify-center items-start gap-8 w-full ">
           <div className="flex items-center gap-2 text-blue-700">
             <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300">
-              Working Skills
+              Knowledges
             </h2>
           </div>
-          <div className=" rounded-xl ">
-            <p className="text-sm text-[#44566c] dark:text-[#a6a6a6]">
-              2024-Present
+          <div className="flex justify-center items-start gap-2">
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md  px-3 py-2 ">
+              Frontend Dev
             </p>
-            <p className="text-md font-medium">
-              Frontend Developer - SupperClub, Dubai
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md px-3 py-2 ">
+              WordPress
             </p>
-            <p className="text-sm text-[#44566c] dark:text-[#a6a6a6]">Remote</p>
           </div>
-          <div className=" rounded-xl ">
-            <p className="text-sm text-[#44566c] dark:text-[#a6a6a6]">
-              2022-Present
+          <div className="flex justify-center items-start gap-2">
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md  px-3 py-2 ">
+              React.Js
             </p>
-            <p className="text-md font-medium">
-              WordPress Design & Dev - Upwork
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md px-3 py-2 ">
+              Next.Js
             </p>
-            <p className="text-sm text-[#44566c] dark:text-[#a6a6a6]">Remote</p>
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md px-3 py-2 ">
+              Node.Js
+            </p>
           </div>
-          <div className=" rounded-xl ">
-            <p className="text-sm text-[#44566c] dark:text-[#a6a6a6]">
-              2023-2024
+
+          <div className="flex justify-center items-start gap-2">
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md  px-3 py-2 ">
+              Time Management
             </p>
-            <p className="text-md font-medium">
-              Data Analyst - Leading Edge Only, UK
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md px-3 py-2 ">
+              Flexibility
             </p>
-            <p className="text-sm text-[#44566c] dark:text-[#a6a6a6]">Remote</p>
+          </div>
+
+          <div className="flex justify-center items-start gap-2">
+            <p className="text-base  text-gray-700 dark:text-gray-300   dark:bg-gray-700 bg-gray-200 rounded-md px-3 py-2 ">
+              Communication
+            </p>
           </div>
         </div>
       </div>

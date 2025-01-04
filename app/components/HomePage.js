@@ -5,10 +5,12 @@ import Profile from "./Profile";
 import About from "./About";
 import { Resume } from "./Resume";
 import Navigation from "./Navigation";
+import Works from "./Works";
 
 const HomePage = () => {
   const [showAbout, setShowAbout] = useState(true);
   const [showResume, setShowResume] = useState(false);
+  const [showWorks, setShowWorks] = useState(false);
   return (
     <div className="content min-h-screen flex flex-col xl:flex-row justify-center items-start w-full  xl:mt-56 mt-14 px-4 sm:px-16  xl:space-x-6 space-y-4 xl:space-y-0 mb-16">
       {/* Profile Section */}
@@ -17,9 +19,14 @@ const HomePage = () => {
       {/* Conditionally render components */}
       {showAbout && <About />}
       {showResume && <Resume />}
+      {showWorks && <Works />}
 
       {/* Pass state setters as props */}
-      <Navigation setShowAbout={setShowAbout} setShowResume={setShowResume} />
+      <Navigation
+        setShowAbout={setShowAbout}
+        setShowResume={setShowResume}
+        setShowWorks={setShowWorks}
+      />
     </div>
   );
 };

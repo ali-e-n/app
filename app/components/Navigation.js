@@ -8,7 +8,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-const Navigation = ({ setShowAbout, setShowResume }) => {
+const Navigation = ({ setShowAbout, setShowResume, setShowWorks }) => {
   return (
     <div className=" xl:w-[12%] xl:min-w-[11%] xl:max-w-[11%]  hidden xl:flex flex-col items-center justify-between pb-8 pt-8  bg-white dark:bg-black text-gray-700 dark:text-white rounded-3xl sticky top-1">
       <ul className="space-y-4">
@@ -16,8 +16,9 @@ const Navigation = ({ setShowAbout, setShowResume }) => {
         <li
           className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
           onClick={() => {
-            setShowAbout(true);
             setShowResume(false);
+            setShowWorks(false);
+            setShowAbout(true);
           }}
         >
           <FaUserAlt className="text-xl group-hover:text-white" />
@@ -28,8 +29,9 @@ const Navigation = ({ setShowAbout, setShowResume }) => {
         <li
           className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
           onClick={() => {
-            setShowResume(true);
             setShowAbout(false);
+            setShowWorks(false);
+            setShowResume(true);
           }}
         >
           <FaFileAlt className="text-xl group-hover:text-white" />
@@ -40,6 +42,9 @@ const Navigation = ({ setShowAbout, setShowResume }) => {
         <li
           className="flex flex-col items-center space-y-2 cursor-pointer text-blue-700 hover:bg-blue-700 dark:hover:bg-blue-700 hover:text-white px-5 py-6 dark:bg-gray-900 bg-[#f3f6f6] rounded-2xl"
           onClick={() => {
+            setShowResume(false);
+            setShowAbout(false);
+            setShowWorks(true);
             console.log("Works clicked");
           }}
         >
